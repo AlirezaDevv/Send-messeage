@@ -4,10 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="input.css" />
     <title>#2</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="m-0 p-0 box-border bg-teal-600 font-thin font-bold">
+    <section class="flex items-center">
+      <div
+        class="w-8/12 p-6 bg-slate-200 rounded-md shadow-2xl text-center m-auto"
+      >
+        <h4 class="mb-6 capitalize font-bold">Enter a message that you like</h4>
+
+        <form id="form">
+          <input type="text" id="message" class="w-60 h-8 px-2 py-4" />
+          <input
+            type="submit"
+            id="submit"
+            value="submit"
+            class="mx-6 py-2 px-7 bg-red-500"
+          />
+        </form>
+
+        <h5 class=" feedback my-6 hidden bg-red-400 p-3 w-5/12 mx-auto">please enter a value</h5>
+        <h4 class="my-6 capitalize">last message delivered</h4>
+        <h4 class=" message-content mb-6 capitalize text-green-700 font-extrabold"></h4>
+      </div>
+    </section>
 
     <script src="app.js"></script>
   </body>
